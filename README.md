@@ -80,7 +80,7 @@ Check by Nslookup command or Search in your new Sub Domain in Browser.
 
 To obtain an Free SSL Certificate, we use the certbot service. For more details, you can visit the [https://certbot.eff.org](https://certbot.eff.org/) website .
 
-* **Installing Certbot** Using Snap Package Manager on Ubuntu
+* <mark style="color:blue;">**Installing Certbot Using Snap Package Manager on Ubuntu**</mark>
 
 ```
 sudo snap install --classic certbot
@@ -90,7 +90,7 @@ sudo snap install --classic certbot
  sudo ln -s /snap/bin/certbot /usr/bin/certbot
 ```
 
-* **get a certificate** and Let Certbot edit your **nginx configuration** automatically
+* <mark style="color:blue;">**get a certificate**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">and Let Certbot edit your</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**nginx configuration**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">automatically</mark>
 
 ```
 sudo certbot --nginx -d X.YOURDOMAIN.AZ
@@ -98,7 +98,7 @@ sudo certbot --nginx -d X.YOURDOMAIN.AZ
 
 🎁   Now you have a free Certificate and you can use it on your servers without any issues.
 
-* **Automatic Renewal**
+* <mark style="color:blue;">**Automatic Renewal**</mark>
 
 ```
 sudo certbot renew --dry-run
