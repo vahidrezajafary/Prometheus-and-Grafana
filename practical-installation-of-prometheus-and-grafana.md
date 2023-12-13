@@ -66,7 +66,8 @@ systemctl status nginx
 ```
 Search Your IP Address In Browser
 /
-nc -v x.x.x.x 80
+snap install links  && 
+links 127.0.0.1 
 ```
 
 <mark style="background-color:green;">**Frist Step Passed !**</mark>
