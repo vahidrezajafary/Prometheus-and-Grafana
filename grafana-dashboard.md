@@ -8,7 +8,7 @@
 In the previous step, we saw how to install Grafana. In this step, we will see how to connect it to Prometheus and set up the Grafana dashboard.
 {% endhint %}
 
-* **Add Prometheus Inside Grafana Dashboard As Datasource**&#x20;
+* <mark style="color:blue;">**Add Prometheus Inside Grafana Dashboard As Datasource**</mark>&#x20;
 
 <figure><img src=".gitbook/assets/data so.png" alt=""><figcaption><p><mark style="color:blue;"><strong>Grafana Dashboard create data source</strong></mark></p></figcaption></figure>
 
@@ -26,7 +26,7 @@ In the previous step, we saw how to install Grafana. In this step, we will see h
 **After settings the data source we can import pre-existing opensource dashboard from** [**Grafana Labs**](https://grafana.com/grafana/dashboards/) **using the Dashboard ID.**
 {% endhint %}
 
-* Goto [Grafana Dashboard](https://grafana.com/grafana/dashboards/) and search for What you looking for.(Example CPU Usage)
+* <mark style="color:orange;">**Goto**</mark> [**Grafana Dashboard**](https://grafana.com/grafana/dashboards/) <mark style="color:orange;">**and search for What you looking for.( e.g. CPU Usage)**</mark>
 
 
 
@@ -38,9 +38,7 @@ In the previous step, we saw how to install Grafana. In this step, we will see h
 
 <figure><img src=".gitbook/assets/cpu.png" alt=""><figcaption></figcaption></figure>
 
-
-
-* Goto Back to Grafana, Dashboard => New => **Import**
+* <mark style="color:blue;">**Goto Back to Grafana, Dashboard => New => Import**</mark>
 
 Enter the Dashboard ID or past URL
 

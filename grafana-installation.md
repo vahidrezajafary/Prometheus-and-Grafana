@@ -26,7 +26,7 @@ sudo apt-get install -y software-properties-common wget
 wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
 ```
 
-* Add stable repository of Grafana -
+* <mark style="color:blue;">**Add stable repository of Grafana**</mark>&#x20;
 
 ```
 echo "deb https://packages.grafana.com/enterprise/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
@@ -42,7 +42,7 @@ sudo apt-get update
 sudo apt-get install grafana-enterprise
 ```
 
-* Start the `Grafana Server`&#x20;
+* <mark style="color:blue;">**Start the Grafana Server**</mark>&#x20;
 
 ```
 sudo systemctl daemon-reload
@@ -60,11 +60,9 @@ sudo systemctl enable grafana-server.service
 Make sure port 3000 is open in the firewall.
 {% endhint %}
 
-Done✔✔✔&#x20;
 
-&#x20;
 
-* You can open the Grafana Dashboard using `http://localhost:3000/login`
+* <mark style="color:orange;">**You can open the Grafana Dashboard using**</mark><mark style="color:orange;">** **</mark><mark style="color:orange;">**`http://localhost:3000/login`**</mark>
 
 
 
@@ -76,12 +74,12 @@ Done✔✔✔&#x20;
 The default login **Username: Password** for accessing the Grafana dashboard is **admin: admin**
 {% endhint %}
 
-Enjoy 🎁🎁🎁
+<mark style="background-color:green;">Done</mark> 🎁🎁🎁
 
 
 
 {% hint style="info" %}
-In the next tutorial,  We See how to work with the Grafana dashboard and get metric.
+In the next tutorial,  We See how to work with the Grafana dashboard and visualize metrics.
 {% endhint %}
 
 ##
