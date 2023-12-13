@@ -56,8 +56,8 @@ We start with the final part of the tutorial for installing Prometheus and Grafa
 <mark style="color:orange;">**1.1 Installing Nginx**</mark>
 
 ```
-apt install nginx -y
-systemctl enable nginx 
+apt install nginx -y  &&  
+systemctl enable nginx  && 
 systemctl status nginx
 ```
 
