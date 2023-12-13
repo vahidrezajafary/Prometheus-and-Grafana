@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# Practical installation of Prometheus and Grafana
+# Practical Lab of Prometheus\_Grafana
 
 
 
@@ -41,6 +41,8 @@ We start with the final part of the tutorial for installing Prometheus and Grafa
 &#x20;     5.2  <mark style="color:green;">**On Remote Linux Server**</mark>
 
 &#x20;     5.3 ** **<mark style="color:green;">**On Remote Windows Server**</mark>
+
+&#x20;     5.4 <mark style="color:green;">**none installable Node Exporter Devices ( Cisco und ... )**</mark>
 
 6. <mark style="color:green;">**Install Grafana**</mark>
 7. <mark style="color:green;">**Setup Grafana Dashbord**</mark>
