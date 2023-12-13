@@ -20,7 +20,6 @@ layout:
 
 
 
-{% hint style="info" %}
 **To experience a secure and practical monitoring service, I suggest you Check the previous section, which is about the prerequisites of Prometheus and Grafana.**
 {% endhint %}
 
