@@ -18,25 +18,25 @@ Introduction: Welcome to the new episode, from the <mark style="color:green;">**
 
 <mark style="color:green;">**1.1   Installing Ngnix**</mark>
 
-* Install Nginx
+* <mark style="color:blue;">**Install Nginx**</mark>
 
 ```
 apt install nginx -y
 ```
 
-* Enable Ngnix Auto-Start at System Boot&#x20;
+* <mark style="color:blue;">**Enable Ngnix Auto-Start at System Boot**</mark>&#x20;
 
 ```
 systemctl enable nginx 
 ```
 
-* Check NGINX status&#x20;
+* <mark style="color:blue;">**Check NGINX status**</mark>&#x20;
 
 ```
 systemctl status nginx
 ```
 
-* Check NGNIX Welcome Page
+* <mark style="color:blue;">**Check NGNIX Welcome Page**</mark>
 
 ```
 Search Your IP Address In Browser
@@ -52,10 +52,10 @@ nc -v x.x.x.x 80
 
 <mark style="color:green;">**2.1     DNS Server**</mark>
 
-In this Section , i'm using Arvancloud DNS provider. You can perform the same steps with any other DNS provider as well like Cloudflare or ... .
+In this Section , i'm using Arvancloud DNS provider. You can perform the same steps with any other DNS provider as well, like Cloudflare or ... .
 
 {% hint style="info" %}
-**In the **<mark style="color:blue;">**CDN**</mark>** section, then **<mark style="color:blue;">**DNS records**</mark>**, here we add our **<mark style="color:blue;">**A record**</mark>**.**
+**In the **<mark style="color:blue;">**CDN**</mark>** section, **<mark style="color:blue;">**DNS records**</mark>**, here we add our new **<mark style="color:blue;">**A record**</mark>**.**
 {% endhint %}
 
 <figure><img src=".gitbook/assets/freessl.png" alt=""><figcaption></figcaption></figure>

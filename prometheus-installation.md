@@ -20,14 +20,13 @@ layout:
 
 
 
+{% hint style="danger" %}
 **To experience a secure and practical monitoring service, I suggest you Check the previous section, which is about the prerequisites of Prometheus and Grafana.**
 {% endhint %}
 
+* <mark style="color:blue;">**Download latest version of Prometheus From**</mark>
 
-
-* <mark style="color:blue;">Download latest version of Prometheus From</mark>&#x20;
-
-&#x20;           [https://prometheus.io/download/](https://prometheus.io/download/)
+[https://prometheus.io/download/](https://prometheus.io/download/)
 
 ```
 Wget https://github.com/prometheus/prometheus/releases/download/v2.48.1/prometheus-2.48.1.linux-amd64.tar.gz
@@ -55,8 +54,6 @@ cd prometheus-2.48.1.linux-amd64
 
 You can Check it at http://\[your ip address]:9090
 
-
-
 {% hint style="info" %}
 The Prometheus installation has been completed. The only issue is that, when the system restarts or we puse the proccess , the Prometheus service also stops. To resolve this problem, we need to place the Prometheus files in the “bin” directory
 {% endhint %}
@@ -74,7 +71,7 @@ cp -r . /usr/local/bin/prometheus
 * <mark style="color:blue;">**Create a file called prometheus.service**</mark>
 
 ```
-sudo  touch /etc/systemd/system/prometheus.service
+sudo  vi /etc/systemd/system/prometheus.service
 ```
 
 * <mark style="color:blue;">**Add the script and save**</mark>
@@ -99,4 +96,3 @@ WantedBy=multi-user.target
 sudo service prometheus start
 sudo service prometheus status
 ```
-
