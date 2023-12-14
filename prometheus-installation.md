@@ -94,5 +94,80 @@ WantedBy=multi-user.target
 
 ```
 sudo service prometheus start
+sudo systemctl enable prometheus
 sudo service prometheus status
+```
+
+
+
+{% hint style="danger" %}
+The installation of Nginx is complete, but it is completely exposed to attacks via the network and the internet. We will take further actions to secure the Prometheus server.
+{% endhint %}
+
+
+
+<mark style="color:orange;">**Step \_1**</mark>
+
+<mark style="color:orange;">**Implemet Web authentication**</mark>
+
+```
+sudo sh -c "echo -n 'USERNAME:' >> /etc/nginx/.htpasswd"
+sudo apt update
+sudo apt install apache2-utils
+```
+
+<mark style="color:blue;">**The option “-c” allows you to create a new file.**</mark>
+
+```
+sudo htpasswd -c /etc/nginx/.htpasswd vahid
+```
+
+```
+sudo nano /etc/nginx/sites-enabled/default
+
+auth_basic "Restricted Content";
+auth_basic_user_file /etc/nginx/.htpasswd;
+
+```
+
+```
+sudo systemctl restart nginx
+```
+
+
+
+<mark style="color:orange;">**Step\_2**</mark>
+
+<mark style="color:orange;">**limit access to port 9090 and only accept requests from the HTTPS port**</mark>&#x20;
+
+```
+sudo nano /etc/nginx/sites-enabled/default
+```
+
+```
+proxy_pass https://127.0.0.1:9090;
+```
+
+```
+sudo systemctl restart nginx
+```
+
+[**Phase II**](https://en.wikipedia.org/wiki/Phase\_II)
+
+```
+systemctl status prometheus
+
+nano /etc/systemd/system/prometheus.service
+```
+
+Add the following switch and allowed IP ADDRESSES  in ‘Exexstart’ line:\
+(Allow the Grafana server at IP address 192.168.2.2 to have access to the Prometheus server)
+
+```
+--web.listen-address=127.0.0.1:9090,192.168.2.2:9090
+```
+
+```
+systemctl daemon-reload
+systemctl restart prometheus
 ```
