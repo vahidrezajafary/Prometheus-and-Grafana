@@ -29,7 +29,7 @@ layout:
 [https://prometheus.io/download/](https://prometheus.io/download/)
 
 ```
-Wget https://github.com/prometheus/prometheus/releases/download/v2.48.1/prometheus-2.48.1.linux-amd64.tar.gz
+wget https://github.com/prometheus/prometheus/releases/download/v2.48.1/prometheus-2.48.1.linux-amd64.tar.gz
 ```
 
 * <mark style="color:blue;">**Untar Our Files**</mark>
