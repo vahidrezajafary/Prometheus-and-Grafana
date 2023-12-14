@@ -7,7 +7,7 @@
 * [Grafana Dashboard](grafana-dashboard.md)
 * [Install Alert manager](install-alert-manager.md)
 * [Practical\_LAB\_Prometheus\_Grafana](practical-installation-of-prometheus-and-grafana/README.md)
-  * [Install NGNIX-DNS records- Get SSL Certificate](practical-installation-of-prometheus-and-grafana/install-ngnix-dns-records-get-ssl-certificate.md)
+  * [Install NGNIX - DNS\_Records - Get Free SSL Certificate](practical-installation-of-prometheus-and-grafana/install-ngnix-dns\_records-get-free-ssl-certificate.md)
   * [Install Secure Prometheus](practical-installation-of-prometheus-and-grafana/install-secure-prometheus.md)
   * [Setup Node Exporter](practical-installation-of-prometheus-and-grafana/setup-node-exporter/README.md)
     * [Linux Server](practical-installation-of-prometheus-and-grafana/setup-node-exporter/linux-server.md)
