@@ -98,7 +98,7 @@ We add 4 Servers:
 
 
 
-<figure><img src=".gitbook/assets/freessl.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/freessl.png" alt=""><figcaption></figcaption></figure>
 
 <mark style="background-color:green;">**Second Step Passed !**</mark>
 
