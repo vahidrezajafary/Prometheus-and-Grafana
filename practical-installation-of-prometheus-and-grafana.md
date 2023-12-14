@@ -372,12 +372,6 @@ sudo service node-exporter status
 
 <mark style="color:blue;">**Now start and check the service is running**</mark>
 
-```
-sudo systemctl daemon-reload
-sudo service node-exporter start
-sudo service node-exporter status
-```
-
 <mark style="color:orange;background-color:green;">**Step 5.2 Passed**</mark>
 
 
@@ -394,12 +388,39 @@ sudo service node-exporter status
 
 
 
-\-================
+
 
 <mark style="color:orange;">**6.   Installing Grafana**</mark>
 
+```
+sudo apt-get install -y apt-transport-https  &&  
+sudo apt-get install -y software-properties-common wget  &&  
+wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -  &&
+echo "deb https://packages.grafana.com/enterprise/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list  &&  
+sudo apt-get update  &&  
+sudo apt-get install grafana-enterprise  &&  
+sudo systemctl daemon-reload  &&  
+sudo systemctl start grafana-server  &&  
+sudo systemctl status grafana-server  &&
+sudo systemctl enable grafana-server.service
+```
 
+{% hint style="danger" %}
+Make sure port 3000 is open in the firewall.
+{% endhint %}
+
+* <mark style="color:orange;">**You can open the Grafana Dashboard using**</mark><mark style="color:orange;">** **</mark><mark style="color:orange;">**`http://localhost:3000/login`**</mark>
+
+{% hint style="success" %}
+Let’s put the following settings in our Nginx for a better experience.\
+
+{% endhint %}
 
 ```
-Update the package info 
+sudo nano /etc/nginx/sites-enabled/default
+
+proxy_pass https://127.0.0.1:3000;
+
+sudo systemctl restart nginx
 ```
+
