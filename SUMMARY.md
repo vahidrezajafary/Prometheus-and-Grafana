@@ -5,4 +5,4 @@
 * [Node Exporter](node-exporter.md)
 * [Grafana Installation](grafana-installation.md)
 * [Grafana Dashboard](grafana-dashboard.md)
-* [Practical Lab of Prometheus\_Grafana](practical-installation-of-prometheus-and-grafana.md)
+* [Practical\_LAB\_Prometheus\_Grafana](practical-installation-of-prometheus-and-grafana.md)
