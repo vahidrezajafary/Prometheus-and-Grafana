@@ -13,5 +13,5 @@
     * [Linux Server](practical-installation-of-prometheus-and-grafana/setup-node-exporter/linux-server.md)
     * [Windows Server](practical-installation-of-prometheus-and-grafana/setup-node-exporter/windows-server.md)
     * [Cisco - Mikrotik](practical-installation-of-prometheus-and-grafana/setup-node-exporter/cisco-mikrotik.md)
-  * [Setup Grafana and Dashboard](practical-installation-of-prometheus-and-grafana/setup-grafana-and-dashboard.md)
+  * [Setup Secure Grafana and Dashboard](practical-installation-of-prometheus-and-grafana/setup-secure-grafana-and-dashboard.md)
   * [Setup Alert Manager](practical-installation-of-prometheus-and-grafana/setup-alert-manager.md)
